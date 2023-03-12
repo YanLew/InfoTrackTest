@@ -60,11 +60,11 @@ namespace InfoTrackTest.Services.Services.SearchServices
             int resultCount = 0;
             List<string> urls = new List<string>();
 
-            while (resultCount < (_targetResultCount + 10))
+            while (resultCount < _targetResultCount)
             {
                 var targetUrl = searchEngine.Url
                                 .Replace(SearchEngineSeparatorConst.SEARCH_KEYWORDS, keywords.Replace(" ", "+"))
-                                .Replace(SearchEngineSeparatorConst.RESULT_NUMBER, (_targetResultCount + 10).ToString())
+                                .Replace(SearchEngineSeparatorConst.RESULT_NUMBER, (_targetResultCount + 20).ToString())
                                 .Replace(SearchEngineSeparatorConst.PAGE_NUMBER, pageNumber.ToString())
                                 .Replace(SearchEngineSeparatorConst.OFFSET, (pageNumber == 1 ? 0 : ((pageNumber - 1) * searchEngine.DefaultPageSize) + 1).ToString())
                                 .Replace(SearchEngineSeparatorConst.DEFAULT_OFFSET_SIZE, (searchEngine.DefaultPageSize ?? 0).ToString());
