@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@core/*": ["src/core/*"],
+      "@history/*": ["src/history/*"],
+      "@search/*": ["src/search/*"],
+      "@searchEngine/*": ["src/searchEngine/*"]
+    }
+  }
+}
