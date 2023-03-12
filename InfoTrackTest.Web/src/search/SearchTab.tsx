@@ -108,7 +108,7 @@ export const SearchTab: React.FunctionComponent<ISearchTabProps> = ({}) => {
               <Alert variant="danger">
                 Error occurs while searching, please be noted that error 429
                 sometimes occurs while sending too many request. Please try
-                again later.
+                again later, or use another search engine.
               </Alert>
             </Col>
           </Row>
