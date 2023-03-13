@@ -2,16 +2,17 @@
 InfoTrack Technical Test
 
 ## Backend Setup 
-.Net Core 7 Api
+.Net Core 7 Api, 
 Url: https://localhost:7293/swagger/index.html
 1. Open InfoTrackTest.sln with Visual Studio
-2. Update InfoTrackTest.Apis/appsettings.json config "ConnectionStrings:InfoTrackTestDb" to update the db connection string / create database "info-track-test"
+2. Update InfoTrackTest.Apis/appsettings.json config "ConnectionStrings:InfoTrackTestDb" to update the db connection string / create an empty express database "info-track-test"
+ - The current connection string is "Server=localhost\\SQLEXPRESS;Database=info-track-test-2;Trusted_Connection=True;TrustServerCertificate=True;"
 3. Open the Package Manager Console in VS
 4. Choose InfoTrackTest.Repositories as the default project
 5. Execute comment `Update-Database`
 
 ## Frontend Setup
-Node version: 16.13.1
+Node version: 16.13.1, 
 Url: https://localhost:3002/
 1. Open Command Prompt and enter the InfoTrackTest.Web
 2. Execute comment `yarn install`
