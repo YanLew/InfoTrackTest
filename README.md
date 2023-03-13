@@ -9,6 +9,7 @@ Url: https://localhost:7293/swagger/index.html
 3. Open the Package Manager Console in VS
 4. Choose InfoTrackTest.Repositories as the default project
 5. Execute comment `Update-Database`
+6. Run project InfoTrackTest.Api
 
 ## Frontend Setup
 Node version: 16.13.1, 
